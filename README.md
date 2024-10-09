@@ -1,1 +1,1 @@
-test component for konflux prod !
+test component for konflux prod
