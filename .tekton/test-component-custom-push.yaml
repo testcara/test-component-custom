@@ -10,7 +10,7 @@ metadata:
       == "main"
   creationTimestamp: null
   labels:
-    appstudio.openshift.io/application: test-component-coustom
+    appstudio.openshift.io/application: test-app
     appstudio.openshift.io/component: test-component-custom
     pipelines.appstudio.openshift.io/type: build
   name: test-component-custom-on-push
@@ -22,7 +22,7 @@ spec:
   - name: revision
     value: '{{revision}}'
   - name: output-image
-    value: quay.io/redhat-user-workloads/wlin-tenant/test-component-custom:{{revision}}
+    value: quay.io/redhat-user-workloads-stage/wlin-tenant/test-component-custom:{{revision}}
   - name: dockerfile
     value: Dockerfile
   pipelineSpec:
